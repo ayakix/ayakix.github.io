@@ -40,6 +40,14 @@
         margin-left: 5%;
         padding-bottom: 30px;
       }
+      #sns {
+        float: right;
+        margin-right: -20px;
+        margin-bottom: 20px;
+      }
+      .clear {
+        clear:both;
+      }
       #form {
         margin-top: 30px;
       }
@@ -199,10 +207,29 @@
       });
     </script>
 
+    <div id="sns">
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1515054095412631&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="fb-like" data-href="http://ayakix.github.io/indentMusic/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="ayakix">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+
+    <div id="clear"></div>
+
     <div id="form">
       <input type="text" id="link" value="http://houchimin.co.jp" style="width: 85%;">
       <input type="button" value="Play" id="button" style="float:right; width: 10%;" />
     </div>
+
+    <div id="clear"></div>
 
     <div id="key">A3</div>
     <div id="lines">
